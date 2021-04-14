@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1><span>YS</span> market</h1>
+    <div class="button_area">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+    <h2>Personal Information</h2>
+    <form class="input_area">
+        <p>
+            <label>First Name:
+                <input name="name" type="text" size="15" placeholder="First name" 
+                    autocomplete="on" autofocus required/>
+            </label>
+            <label>Last Name:
+                <input name="name" type="text" size="15" placeholder="Last name" 
+                    autocomplete="on" required/>
+            </label>
+        </p>
+        <p>
+            <label>Your birthday:
+                <input type="date"/>
+            </label>
+        </p>
+        <p>
+            <label>Phone number:
+                <input type="tel" placeholder="(###) ###-####"
+                    pattern="\(\d{3}\) +\d{3}-\d{4}" required />
+                    (###) ###-####
+            </label>
+        </p>        
+        <p>
+            <label>Email:
+                <input type="email" placeholder="name@domain.com" required />
+                    (name@domain.com)
+            </label>
+        </p>        
+        <p>
+            <label>Username:
+                <input type="text" required/>
+            </label>
+        </p>
+        <p>
+            <label>Password:
+                <input type="password" autocomplete="off" required/>
+            </label>
+        </p>
+        <p>
+            <label>Confirm:
+                <input type="password" autocomplete="off" required/>
+            </label>
+        </p>
+        <p>
+            <input class="btn" type="submit" value="Sign Up">
+            <input class="btn" type="reset" value="Clear">
+        </p>
+    </form>
+</body>
+</html>
