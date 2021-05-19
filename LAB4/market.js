@@ -18,9 +18,9 @@ function initialize() {
     var lastSearch = '';
     var selectedGenreGroup;
     var finalGroup = albums;
-    // var finalGroup = albums.slice(0,10);
 
-    updateDisplay();
+    firstUpdate();
+    document.getElementById('searchedItems').addEventListener("scroll", loadMore);
 
     selectedGenreGroup = [];
     finalGroup = [];
@@ -38,7 +38,12 @@ function initialize() {
             lastSearch = searchTerm.value.trim();
             if(category.value === 'All') {
                 selectedGenreGroup = albums;
-                selectAlbums();
+                if(searchTerm.value.trim() === '') {
+                    firstUpdate();
+                    document.getElementById('searchedItems').addEventListener("scroll", loadMore);
+                } else {
+                    selectAlbums();
+                }
             } else {
                 var lowerCaseGenre = category.value.toLowerCase();
                 for(var i = 0; i < albums.length ; i++) {
@@ -67,13 +72,37 @@ function initialize() {
         }
     }
 
+    function firstUpdate() {
+        while (searchedResult.firstChild) {
+            searchedResult.removeChild(searchedResult.firstChild);
+        }
+        finalGroup = albums.slice(0,8);
+        for(var i = 0; i < finalGroup.length; i++) {
+            fetchBlob(finalGroup[i]);
+        }
+    }
+
+    function loadMore() {
+        var displayGroup = albums.slice(8);
+        var container = document.getElementById('searchedItems');
+        var scrollHeight = container.offsetHeight;
+        var scrollTop = container.scrollTop;
+        var clientHeight = window.innerHeight;
+        if(scrollTop + clientHeight > scrollHeight-5) {
+            for(var i = 0; i < displayGroup.length; i++) {
+                fetchBlob(displayGroup[i]);
+            }
+            document.getElementById('searchedItems').removeEventListener("scroll",loadMore);
+        }
+    }
+
     function updateDisplay() {
         // delete previous data
         while (searchedResult.firstChild) {
             searchedResult.removeChild(searchedResult.firstChild);
         }
         if(finalGroup.length === 0) {
-            var par = document.createElement('p');
+            var par = document.createElement('h4');
             par.setAttribute('id', 'message');
             par.textContent = 'No results';
             searchedResult.appendChild(par);
@@ -123,67 +152,4 @@ function initialize() {
         section.appendChild(par);
         section.appendChild(plusBtn);
     }
-    // const container = document.querySelector('#searchedItems');
-    // window.addEventListener('scroll', ()=> {
-    //     const {scrollHeight, scrollTop, clientHeight} = container.documentElement;
-    //     if(scrollTop + clientHeight > scrollHeight-100) {
-    //         setTimeout(createPost,1000);
-    //     }
-    // });
-    // function createPost() {
-    //     finalGroup = albums;
-    //     updateDisplay();
-    //     var section = document.createElement('section');
-    //     var name = document.createElement('h2');
-    //     var par = document.createElement('p');
-    //     var image = document.createElement('img');
-    //     var plusBtn = document.createElement('button');
-        
-    //     section.setAttribute('class', 'itemContainer');
-    //     par.setAttribute('class', album.albumName);
-    //     name.setAttribute('class', album.albumName);
-    //     plusBtn.setAttribute('id', album.albumName);
-    //     plusBtn.setAttribute('class', 'plusBtn');
-
-    //     name.textContent = album.albumName.replace(album.albumName.charAt(0), album.albumName.charAt(0).toUpperCase());
-    //     par.textContent = '$' + album.price.toFixed(2);
-    //     image.src = objectURL;
-    //     image.alt = album.albumName;
-    //     plusBtn.textContent = "+";
-
-    //     searchedResult.appendChild(section);
-    //     section.appendChild(image);
-    //     section.appendChild(name);
-    //     section.appendChild(par);
-    //     section.appendChild(plusBtn);
-    // }
 }
-
-// let counter = 1;
-// document.addEventListener('DOMContentLoaded', load);
-// window.onscroll = () => {
-//     if (window.innerHeight + window,scrollY >= document.body.offsetHeight) {
-//         load();
-//     }
-// };
-
-// function load() {
-//     const start = counter;
-//     const end = start + 1;
-//     counter = end + 1;
-//     fetch('product.json')
-//     .then(response => response.json())
-//     .then(posts => {
-//         posts.forEach(add_post);
-//     })
-// };
-
-// function add_post(comments) {
-//     const post = document.createElement('div');
-//     post.className = 'post';
-//     post.innerHTML = comments.body;
-//     document.querySelector('#posts').append(post);
-// }
-// function showDiv() {
-//     var 
-// }
