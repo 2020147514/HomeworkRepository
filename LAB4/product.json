@@ -1,0 +1,178 @@
+[
+    {
+        "albumName":"Viva La Vida or Death And All His Friends", 
+        "singerName":"Coldplay", 
+        "price":23.93, 
+        "genre":"rock", 
+        "itemIndex":0,
+        "coverImg": "0.jpg"
+    },
+    {
+        "albumName":"Ghost Stories", 
+        "singerName":"Coldplay", 
+        "price":15.37, 
+        "genre":"pop", 
+        "itemIndex":1,
+        "coverImg": "1.jpg"
+    },
+    {
+        "albumName":"A Head Full Of Dreams", 
+        "singerName":"Coldplay", 
+        "price":13.99, 
+        "genre":"pop", 
+        "itemIndex":2,
+        "coverImg": "2.jpg"
+    },
+    {
+        "albumName":"Everyday Life", 
+        "singerName":"Coldplay", 
+        "price":10.15, 
+        "genre":"rock", 
+        "itemIndex":3,
+        "coverImg": "3.jpg"
+    },
+    {
+        "albumName":"Parachutes", 
+        "singerName":"Coldplay", 
+        "price":5.79, 
+        "genre":"rock", 
+        "itemIndex":4,
+        "coverImg": "4.jpg"
+    },
+    {
+        "albumName":"thank u, next", 
+        "singerName":"Ariana Grande", 
+        "price":19.33, 
+        "genre":"pop", 
+        "itemIndex":5,
+        "coverImg": "5.jpg"
+    },
+    {
+        "albumName":"Dangerous Woman", 
+        "singerName":"Ariana Grande", 
+        "price":11.99, 
+        "genre":"pop", 
+        "itemIndex":6,
+        "coverImg": "6.jpg"
+    },
+    {
+        "albumName":"My Everything", 
+        "singerName":"Ariana Grande", 
+        "price":11.57, 
+        "genre":"pop", 
+        "itemIndex":7,
+        "coverImg": "7.jpg"
+    },
+    {
+        "albumName":"Your Truly", 
+        "singerName":"Ariana Grande", 
+        "price":39.06, 
+        "genre":"pop", 
+        "itemIndex":8,
+        "coverImg": "8.jpg"
+    },
+    {
+        "albumName":"Fine Line", 
+        "singerName":"Harry Styles", 
+        "price":29.99, 
+        "genre":"pop", 
+        "itemIndex":9,
+        "coverImg": "9.jpg"
+    },
+    {
+        "albumName":"Harry Styles", 
+        "singerName":"Harry Styles", 
+        "price":9.10, 
+        "genre":"pop", 
+        "itemIndex":10,
+        "coverImg": "10.jpg"
+    },
+    {
+        "albumName":"Made in the A.M.", 
+        "singerName":"One Direction", 
+        "price":4.99, 
+        "genre":"pop", 
+        "itemIndex":11,
+        "coverImg": "11.jpg"
+    },
+    {
+        "albumName":"FOUR", 
+        "singerName":"One Direction", 
+        "price":5.99, 
+        "genre":"pop", 
+        "itemIndex":12,
+        "coverImg": "12.jpg"
+    },
+    {
+        "albumName":"Midnight Memories", 
+        "singerName":"One Direction", 
+        "price":6.41, 
+        "genre":"pop", 
+        "itemIndex":13,
+        "coverImg": "13.jpg"
+    },
+    {
+        "albumName":"1989", 
+        "singerName":"Taylor Swift", 
+        "price":12.16, 
+        "genre":"pop", 
+        "itemIndex":14,
+        "coverImg": "14.jpg"
+    },
+    {
+        "albumName":"reputation", 
+        "singerName":"Taylor Swift", 
+        "price":13.99, 
+        "genre":"pop", 
+        "itemIndex":15,
+        "coverImg": "15.jpg"
+    },
+    {
+        "albumName":"Red", 
+        "singerName":"Taylor Swift", 
+        "price":99.99, 
+        "genre":"country", 
+        "itemIndex":16,
+        "coverImg": "16.jpg"
+    },
+    {
+        "albumName":"Lover", 
+        "singerName":"Taylor Swift", 
+        "price":10.98, 
+        "genre":"pop", 
+        "itemIndex":17,
+        "coverImg": "17.jpg"
+    },
+    {
+        "albumName":"25", 
+        "singerName":"Adele", 
+        "price":21.77, 
+        "genre":"pop", 
+        "itemIndex":18,
+        "coverImg": "18.jpg"
+    },
+    {
+        "albumName":"21", 
+        "singerName":"Adele", 
+        "price":17.91, 
+        "genre":"pop", 
+        "itemIndex":19,
+        "coverImg": "19.jpg"
+    },
+    {
+        "albumName":"H.E.R.", 
+        "singerName":"H.E.R.", 
+        "price":17.26, 
+        "genre":"r&b", 
+        "itemIndex":20,
+        "coverImg": "20.jpg"
+    },
+    {
+        "albumName":"Ctrl", 
+        "singerName":"SZA", 
+        "price":8.52, 
+        "genre":"r&b", 
+        "itemIndex":21,
+        "coverImg": "21.jpg"
+    }
+]

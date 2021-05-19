@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body class="index">
+        <div class="container">
+            <div class="header_animation">
+                <div id="moving">Welcome to YS Market</div>
+            </div>
+            <div class="nav_bar">
+                <div class="button_area" id="main_btn">
+                    <a href="index.html">Main</a>
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign Up</a>
+                </div>
+            </div>
+            <div class="items">
+                <h3>TOP RATED</h3>
+                <div class="item_box">
+                    <div class="item_content">
+                        <img src="1.jpg" />
+                    </div>
+                    <div class="item_content">
+                        <img src="2.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="items" id="searchItems">
+                <h3>ALBUMS</h3>
+                <form>
+                    <div>
+                        <label for="category">Genre:</label>
+                        <select id="category">
+                            <option selected>All</option>
+                            <option>pop</option>
+                            <option>R&B</option>
+                            <option>rock</option>
+                            <option>country</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="searchTerm">Enter search term:</label>
+                        <input type="text" id="searchTerm" placeholder="e.g. Viva La Vida">
+                    </div>
+                    <div>
+                        <button id="searchBtn">Filter</button>
+                    </div>
+                </form>
+            </div>
+            <div class="items" id="searchedItems">
+                <!-- here -->
+            </div>
+            <div class="introduction">
+                <h3>INTRODUCTION</h3>
+                <div class="intro_content">
+                    <p>Welcome to YS Market. This is a space where you can freely buy and sell records. Have fun buying :)</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo, qui in non similique distinctio sed dolorum accusamus itaque hic temporibus excepturi deserunt adipisci earum quibusdam assumenda obcaecati saepe. Tempora consequatur vel repudiandae? Eum eos sit asperiores quas aspernatur facilis consequatur sint ipsum? Et sit facere aspernatur, beatae ab repellat aliquid laudantium voluptates odit voluptatum nesciunt eum sed totam esse, quasi eos. Sit sapiente iste dolor nihil nobis perspiciatis omnis blanditiis praesentium doloribus ad doloremque quis iusto quidem, nisi nesciunt perferendis. Voluptates, cum quod. Labore veniam nam, sapiente eius, sed autem animi similique, accusantium consectetur illum ratione assumenda incidunt voluptatum.</p>
+                </div>
+            </div>
+        </div>
+        <script src="market.js"></script>
+    </body>
+</html>
