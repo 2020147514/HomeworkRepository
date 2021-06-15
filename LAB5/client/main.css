@@ -1,0 +1,264 @@
+.button_area {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(253, 186, 186);
+}
+
+.button_area a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 70px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#main_btn {
+    background-color: whitesmoke;
+}
+
+#main_btn a {
+    color: rgb(175, 175, 175);
+}
+
+.input_area {
+    background-color: rgb(245, 216, 212);
+    color:rgb(90, 90, 90);
+    padding: 20px 20px;
+}
+
+h1 {
+    text-align: right;
+    margin: 0 50px 0 0;
+    font-size: 70px;
+    color: rgb(126, 123, 123);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 span {
+    color: rgb(124, 124, 253);
+}
+
+h2 {
+    color: rgb(223, 76, 76);
+}
+
+.btn {
+    background-color: rgb(192, 175, 175);
+    border: 3px solid rgb(139, 139, 139);
+}
+
+#signupMessage {
+    text-decoration: none;
+    color: rgb(187, 116, 116);
+}
+
+.container {
+    width: 1020px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.container2{
+    width: 1020px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.index {
+    display: flex;
+    justify-content: center;
+}
+.index2 {
+    display: flex;
+    justify-content: center;
+}
+
+.header_animation {
+    background-color: rgb(134, 162, 180);
+    position: relative;
+    height: 50px;
+}
+
+.items {
+    padding: 0 0 10px 10px;
+}
+
+.items h3 {
+    font-size: 40px;
+    color:rgb(75, 74, 74);
+}
+
+.item_box {
+    display: flex;
+    flex-direction: row;
+}
+
+.item_content {
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.item_content img {
+    width: 50%;
+    opacity: 30%;
+    transition: width 2s, opacity 2s;
+}
+
+.item_content img:hover {
+    width: 100%;
+    opacity: 100%;
+}
+
+#searchItems {
+    position: relative;
+}
+
+#searchItems label{
+    font-size: 25px;
+}
+
+#searchBtn {
+    position: absolute;
+    right: 450px;
+    bottom: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: rgb(253, 244, 230);
+    border: 0;
+}
+
+#searchBtn:hover {
+    background-color: rgb(252, 226, 188);
+}
+
+#searchTerm {
+    border: 0;
+    border-bottom: 3px solid rgb(117, 116, 116);
+}
+
+#category {
+    border: 0;
+    border-bottom: 3px solid rgb(117, 116, 116);
+}
+
+.plusBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(167, 165, 165);
+    z-index:3;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    font-size: 30px;
+    border: 0;
+}
+
+.plusBtn:hover {
+    cursor:pointer;
+    background-color: pink;
+}
+
+#searchedItems h2 {
+    color:rgb(252, 248, 248);
+    background-color: black;
+    position: absolute;
+    z-index:2;
+    right: 40px;
+    top: 0px;
+    font-size: 20px;
+    display:none;
+}
+
+#searchedItems p {
+    color:rgb(252, 248, 248);
+    background-color: black;
+    position: absolute;
+    z-index:2;
+    right: 40px;
+    top: 25px;
+    font-size: 30px;
+    display:none;
+}
+/* 
+#message {
+    display: block;
+} */
+
+
+#searchedItems {
+    background-color: rgb(233, 237, 245);
+    text-align: center;
+    margin:0;
+    padding:30px 0 1px 0;
+    overflow-x: hidden;
+    width: 1020px;
+    height:1300px;
+}
+
+#searchedItems section {
+    width: 480px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#searchedItems button {
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+}
+
+#searchedItems img {
+    width: 450px;
+    height: 450px;
+}
+
+.introduction {
+    background-color: whitesmoke;
+    padding: 10px 10px 10px 10px;
+}
+
+#moving {
+    bottom: 0;
+    padding-left: 5px;
+    width: 450px;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    animation: movingContent linear 2s infinite;
+}
+@keyframes movingContent
+{
+    0% {left: 1020px;}
+    25% {left: 600px;}
+    50% {left: 510px;}
+    95% {left: 420px;}
+    100% {left: 0px;}
+}
+
+.introduction {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.introduction h3 {
+    font-size: 40px;
+    color:rgb(75, 74, 74);
+}
+
+.intro_content {
+    font-size: 20px;
+    column-count: 2;
+    column-gap: 30px;
+    column-width: 400px;
+    column-rule: 2px solid black;
+}
